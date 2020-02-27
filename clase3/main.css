@@ -1,0 +1,122 @@
+/* Selector Global */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* flexbox */
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Selector de Etiqueta */
+h1 {
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    color: blue;
+    font-size: 25px;
+}
+
+p {
+    color: red;
+}
+
+/* Selector de clase */
+.custom-p {
+    color: green;
+    font-size: 40px;
+}
+
+.padre {
+    width: 500px;
+    height: 500px;
+    border: solid 3px green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.madre {
+    width: 500px;
+    height: 500px;
+    border: solid 3px #bb4704;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hija , .hijo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.hija:hover {
+    background-color: #383838b4;
+}
+
+.hijo:active {
+    background-color: #383838b4;
+}
+
+span {
+    color: #fff;
+    font-size: 30px;
+}
+
+input {
+    font-size: 40px;
+    padding-left: 12px;
+    caret-color: red;
+}
+
+input:active {
+    color: red !important;
+}
+
+input::placeholder {
+    color: rgba(65, 105, 225, 0.185);
+}
+
+/* .bold {
+    color: black;
+    font-weight: bold;
+} */
+
+/* display */
+
+/* tipo block
+no permite poner nada al lado de ellas pero permite modificar su alto y ancho
+h1 - h6
+p
+div
+
+tipo inline
+te permite poner cosa al lado del elemento pero no modificar ancho y alto
+a
+img */
+
+/* height: 100vh; viewport height, todo el espacio de la pantalla */
+
+.hija {
+    width: 150px;
+    height: 150px;
+    border: solid 3px #04bbbb;
+}
+
+.hijo {
+    width: 150px;
+    height: 150px;
+    border: solid 3px #4a04bb;
+}
